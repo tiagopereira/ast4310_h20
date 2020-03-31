@@ -14,7 +14,7 @@ To do the assignments you will need Python 3.x with [Astropy](https://www.astrop
 
 You can also install the software in your laptop, which may be a more convenient option. The easiest way to do this is using the [miniconda](https://conda.io/miniconda.html) or [Anaconda](https://www.anaconda.com/download/) Python distributions (*python 3.x versions*). Miniconda is recommended because it is a smaller download, but Anaconda works just as well if you already have it or are more familiar with it.
 
-Once you have conda installed (either a new install or an older version), the recommended way to install the packages is to create a new enviroment (we'll call it `ast2210`) to ensure you have the most recent versions. You can do this by:
+Once you have conda installed (either a new install or an older version), the recommended way to install the packages is to create a new enviroment (we'll call it `ast4310`) to ensure you have the most recent versions. You can do this by:
 
 ``` bash
 conda create -n ast4310 -c conda-forge --yes python=3.7 jupyterlab sunpy ipympl bqplot nodejs
