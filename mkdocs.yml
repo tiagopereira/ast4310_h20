@@ -14,8 +14,9 @@ extra:
 
 pages:
     - Introduction: index.md
-    - Preparation for assignments: prep.md
-    - Literature: literature.md
+    - Syllabus and literature: literature.md
+    - Software and tools: tools.md
+    - Project assignments: projects.md
 theme:
     name: 'material'
     font: false   # avoid Google fonts for GDPR compliance
