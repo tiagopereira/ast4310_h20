@@ -7,9 +7,9 @@ repo_url: https://github.com/tiagopereira/ast4310
 
 extra:
   social:
-    - type: github-alt
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/tiagopereira
-    - type: globe
+    - icon: fontawesome/solid/globe
       link: https://tiagopereira.space/
 
 nav:
@@ -17,6 +17,7 @@ nav:
     - Syllabus and literature: literature.md
     - Software and tools: tools.md
     - Project assignments: projects.md
+    - Resources: resources.md
 theme:
     name: 'material'
     font: false   # avoid Google fonts for GDPR compliance
