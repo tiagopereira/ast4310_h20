@@ -8,6 +8,7 @@ These pages contain a description of AST4310 and additional resources. The pages
 - Classes will be held in person unless otherwise directed
 - Given COVID-19 rules, students in quarantine/isolation will be able to participate remotely (see also [Software and Tools](tools/))
 - See separate page for [syllabus and literature](literature/)
+- Visualisations and other in-lecture exercises will be shared under [resources](resources/)
 
 ## Assessment
 
@@ -20,7 +21,7 @@ The final grade is determined by an assessment of six projects. Project 1 is com
 | Project 3     | 02.10.2020 | 20% | *La Palma* |
 | Project 4     | 23.10.2020 | 25% | Solar stratification and continua |
 | Project 5     | 13.11.2020 | 25% | LTE line formation |
-| Project 6     | 11.12.2020 | 25 | *Different options* |
+| Project 6     | 11.12.2020 | 25% | *Different options* |
 
 ## Required software and tools
 
@@ -30,4 +31,4 @@ Students are expected to have their own laptops, and bring them to classes (incl
 
 More details can be found under [software and tools](tools/).
 
-The projects are in Jupyter notebook format. Only two programming languages are allowed: Python or Julia. In the classes we will make extensive use of Jupyter lab. In addition, some basic familiarity with `git` is required - it will be used mostly to download and update assignments.
+The projects are in Jupyter notebook format. Only two programming languages are allowed: **Python** or **Julia**. In the classes we will make extensive use of Jupyter lab. In addition, some basic familiarity with `git` is required - it will be used mostly to download and update assignments.

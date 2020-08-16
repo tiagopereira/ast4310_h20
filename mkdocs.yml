@@ -12,7 +12,7 @@ extra:
     - type: globe
       link: https://tiagopereira.space/
 
-pages:
+nav:
     - Introduction: index.md
     - Syllabus and literature: literature.md
     - Software and tools: tools.md
