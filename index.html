@@ -239,15 +239,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visualisations" class="md-nav__link">
-    Visualisations
+  <a href="#practicalities" class="md-nav__link">
+    Practicalities
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-for-assignments" class="md-nav__link">
-    Software for assignments
+  <a href="#assessment" class="md-nav__link">
+    Assessment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-software-and-tools" class="md-nav__link">
+    Required software and tools
   </a>
   
 </li>
@@ -269,8 +276,8 @@
 
 
   <li class="md-nav__item">
-    <a href="prep.md" title="Preparation for assignments" class="md-nav__link">
-      Preparation for assignments
+    <a href="literature/" title="Syllabus and literature" class="md-nav__link">
+      Syllabus and literature
     </a>
   </li>
 
@@ -281,8 +288,20 @@
 
 
   <li class="md-nav__item">
-    <a href="literature/" title="Literature" class="md-nav__link">
-      Literature
+    <a href="tools/" title="Software and tools" class="md-nav__link">
+      Software and tools
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="projects/" title="Project assignments" class="md-nav__link">
+      Project assignments
     </a>
   </li>
 
@@ -308,15 +327,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visualisations" class="md-nav__link">
-    Visualisations
+  <a href="#practicalities" class="md-nav__link">
+    Practicalities
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-for-assignments" class="md-nav__link">
-    Software for assignments
+  <a href="#assessment" class="md-nav__link">
+    Assessment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-software-and-tools" class="md-nav__link">
+    Required software and tools
   </a>
   
 </li>
@@ -341,24 +367,69 @@
                 
                 
                 <h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<p>These pages contain additional resources for AST4310. In particular, instructions on how to set up Python for the mandatory assignments. Please read carefully to make sure you understand the background materials, what is expected from this assignment, and the necessary software to run it.</p>
-<h2 id="visualisations">Visualisations<a class="headerlink" href="#visualisations" title="Permanent link">&para;</a></h2>
-<p>Some of the visualisations we'll run on class will be available on Binder, an online notebook service. With Binder, you can run Jupyter notebooks from the cloud, without having the packages installed in your computer. Try one of the available repositories:</p>
+<p>These pages contain a description of AST4310 and additional resources. The pages <a href="https://www.uio.no/studier/emner/matnat/astro/AST4310/h20/index.html">at the University web site</a> will still be updated (in particular the messages), but the bulk of the materials will be linked here.</p>
+<h2 id="practicalities">Practicalities<a class="headerlink" href="#practicalities" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Line formation on a homogeneous slab <a href="https://mybinder.org/v2/gh/tiagopereira/rt-viz/master?filepath=notebooks%2Fline_formation_slab.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></li>
-<li>Line formation on a 1D model atmosphere <a href="https://mybinder.org/v2/gh/tiagopereira/rt-viz/master?filepath=notebooks%2Fline_formation_atmos1d.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></li>
+<li>Four hours of lectures and two hours of exercise classes per week (see <a href="https://www.uio.no/studier/emner/matnat/astro/AST4310/h20/timeplan/index.html">calendar</a>)</li>
+<li>Classes will be held in person unless otherwise directed</li>
+<li>Given COVID-19 rules, students in quarantine/isolation will be able to participate remotely (see also <a href="tools/">Software and Tools</a>)</li>
+<li>See separate page for <a href="literature/">syllabus and literature</a></li>
 </ul>
-<p>Alternatively, if you have jupyterlab and bqplot, you can also clone the <a href="https://github.com/tiagopereira/rt-viz">visualisation repository</a> from Github.</p>
-<h2 id="software-for-assignments">Software for assignments<a class="headerlink" href="#software-for-assignments" title="Permanent link">&para;</a></h2>
-<p>The assignments are a mix of computational tasks and interpretation of the physics. They should be written as Jupyter notebooks with the code in Python. While it is possible to complete most tasks using different programming languages, the choice of Python is to simplify the tasks. To encourage good scientific practices, your report should be in the form of a Jupyter notebook, and you need to use <a href="https://jupyterlab.readthedocs.io/en/latest/">Jupyterlab</a> or the <a href="https://jupyter.org/">Jupyter notebook</a>.</p>
-<p>You will need the following software:</p>
-<ul>
-<li><a href="https://docs.python.org/3/">Python 3.x</a></li>
-<li><a href="https://jupyterlab.readthedocs.io/en/latest/">Jupyterlab</a> / <a href="https://jupyter.org/">Jupyter notebook</a></li>
-<li><a href="https://www.astropy.org/">Astropy</a></li>
-<li>Other standard python scientific packages (e.g. numpy/scipy/matplotlib)</li>
-</ul>
-<p>More details on obtaining and installing these packages can be found in the <a href="prep.md">Preparation</a> section.</p>
+<h2 id="assessment">Assessment<a class="headerlink" href="#assessment" title="Permanent link">&para;</a></h2>
+<p>The final grade is determined by an assessment of six projects. Project 1 is compulsory but only pass/fail, so it won't factor in the final grade. The following table lists deadline for handing in each project, how much each project weighs in the final grade, and the topic of each project. More details can be found under <a href="projects/">projects</a>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">Deadline</th>
+<th align="center">Weight</th>
+<th align="right">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project 1</td>
+<td align="center">04.09.2020</td>
+<td align="center">Pass/fail</td>
+<td align="right">Basic spectral line formation</td>
+</tr>
+<tr>
+<td>Project 2</td>
+<td align="center">18.09.2020</td>
+<td align="center">10%</td>
+<td align="right">Line strengths and curve of growth</td>
+</tr>
+<tr>
+<td>Project 3</td>
+<td align="center">02.10.2020</td>
+<td align="center">20%</td>
+<td align="right"><em>La Palma</em></td>
+</tr>
+<tr>
+<td>Project 4</td>
+<td align="center">23.10.2020</td>
+<td align="center">25%</td>
+<td align="right">Solar stratification and continua</td>
+</tr>
+<tr>
+<td>Project 5</td>
+<td align="center">13.11.2020</td>
+<td align="center">25%</td>
+<td align="right">LTE line formation</td>
+</tr>
+<tr>
+<td>Project 6</td>
+<td align="center">11.12.2020</td>
+<td align="center">25</td>
+<td align="right"><em>Different options</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="required-software-and-tools">Required software and tools<a class="headerlink" href="#required-software-and-tools" title="Permanent link">&para;</a></h2>
+<p>This course will have a strong computational component. Computations are not the end goal, but they will be an important tool to understand the topics we will cover. Research in astrophysics is becoming more and more computational; the course will equip students with the strategies and skills to deal with modern astrophysical problems. </p>
+<p>Students are expected to have their own laptops, and bring them to classes (including lectures!). The assignments and projects can also be run on the linux machines at the Institute. This may be especially helpful for computationally-heavy calculations that need more compute power.</p>
+<p>More details can be found under <a href="tools/">software and tools</a>.</p>
+<p>The projects are in Jupyter notebook format. Only two programming languages are allowed: Python or Julia. In the classes we will make extensive use of Jupyter lab. In addition, some basic familiarity with <code class="codehilite"><span class="err">git</span></code> is required - it will be used mostly to download and update assignments.</p>
                 
                   
                 
@@ -381,13 +452,13 @@
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="literature/" title="Literature" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="literature/" title="Syllabus and literature" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Literature
+                Syllabus and literature
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
