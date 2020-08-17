@@ -12,7 +12,7 @@ Students can either work from their personal laptops or from the linux machines 
 To install the programming environment in your laptop, see below.
 
 !!! info
-    If you have problems installing the software, you can, as a last resort, run the notebooks from a cloud-based solution via Binder. This has its own issues (e.g. Binder being unavailable, timeouts after 10 minutes of inactivity, etc.), so be sure to save frequently ("Save" and then download to your computer). Here's the binder link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ita-solar/ast4310/master?urlpath=lab/tree/notebooks).
+    If you have problems installing the software, you can, as a last resort, run the notebooks from a cloud-based solution via Binder. This has its own issues (e.g. Binder being unavailable, timeouts after 10 minutes of inactivity, etc.), so be sure to save frequently ("Save" and then download to your computer). Here's the binder link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tiagopereira/ast4310/master?urlpath=lab/tree/notebooks).
 
 ## Installing the Python environment
 
@@ -20,7 +20,7 @@ To do the assignments you will need Python 3.8.x with [Astropy](https://www.astr
 
 ### Windows 
 
-!!! info
+!!! warning
     If you have a laptop with Windows, the recommended way to install all the packages is to use the Docker with an image that we will provide. This is not yet ready, but we are working on it and will update this page soon.
 
 ### Linux or macOS
@@ -78,7 +78,7 @@ To do the assignments you will need Julia 1.5.0 or above, plus Jupyter and a few
 
 ### Windows 
 
-!!! info
+!!! warning
     If you have a laptop with Windows, the recommended way to install all the packages is to use the Docker with an image that we will provide. This is not yet ready, but we are working on it and will update this page soon.
 
 ### Linux or macOS
