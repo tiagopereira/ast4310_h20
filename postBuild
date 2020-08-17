@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Build jupyterlab extensions
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib bqplot
