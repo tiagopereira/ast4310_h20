@@ -249,8 +249,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
+  <a href="#windows-using-docker" class="md-nav__link">
+    Windows (using Docker)
   </a>
   
 </li>
@@ -260,12 +260,18 @@
     Linux or macOS
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Linux or macOS">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#testing-installation" class="md-nav__link">
     Testing installation
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -283,7 +289,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windows_1" class="md-nav__link">
+  <a href="#windows" class="md-nav__link">
     Windows
   </a>
   
@@ -380,8 +386,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
+  <a href="#windows-using-docker" class="md-nav__link">
+    Windows (using Docker)
   </a>
   
 </li>
@@ -391,12 +397,18 @@
     Linux or macOS
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Linux or macOS">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#testing-installation" class="md-nav__link">
     Testing installation
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -414,7 +426,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windows_1" class="md-nav__link">
+  <a href="#windows" class="md-nav__link">
     Windows
   </a>
   
@@ -471,11 +483,46 @@
 </div>
 <h2 id="installing-the-python-environment">Installing the Python environment<a class="headerlink" href="#installing-the-python-environment" title="Permanent link">&para;</a></h2>
 <p>To do the assignments you will need Python 3.8.x with <a href="https://www.astropy.org/">Astropy</a>, plus Jupyter and many other dependencies of these packages.</p>
-<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If you have a laptop with Windows, the recommended way to install all the packages is to use the Docker with an image that we will provide. This is not yet ready, but we are working on it and will update this page soon.</p>
+<h3 id="windows-using-docker">Windows (using Docker)<a class="headerlink" href="#windows-using-docker" title="Permanent link">&para;</a></h3>
+<p>The recommended way to get all the python packages working in Linux is to use <a href="https://www.docker.com/">Docker</a>. Docker runs a virtual Linux container alongside your operative system, in our case one that already has all the necessary packages installed. </p>
+<ol>
+<li>Start by <a href="https://docs.docker.com/get-docker/">downloading Docker</a></li>
+<li>Install Docker (administrator priviliges are required)</li>
+<li>Test your installation by opening a terminal window (Command Prompt or PowerShell) and entering:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>&gt; docker --version
+
+Docker version 19.03.1
+</code></pre></div>
+
+<p>If you get a similar output to the above (version may vary), you should be good. Now you will need to download the Docker image "snowgum/astronomy-python":</p>
+<div class="highlight"><pre><span></span><code>&gt; docker pull snowgum/astronomy-python
+
+Unable to find image &#39;snowgum/astronomy-python:latest&#39; locally
+latest: Pulling from snowgum/astronomy-python
+692c352adcf2: Pull complete
+97058a342707: Pull complete
+2821b8e766f4: Pull complete
+(...)
+</code></pre></div>
+
+<p>This will be several hundreds of MB, so may take a while. You should now have a fully working Linux container with Jupyter lab, and many scientific python packages. You can start it from the terminal. <em>Be sure to navigate to the directory where you have the AST4310 notebooks</em>. Then, run:</p>
+<div class="highlight"><pre><span></span><code>&gt; docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v &quot;%cd%&quot;:/home/jovyan/work snowgum/astronomy-python
+</code></pre></div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you use <code>PowerShell</code> instead of the Command Prompt, you may have to replace the part <code>%cd%</code> with <code>$pwd</code>. Likewise if you run macOS or Linux, replace with <code>$PWD</code>.</p>
 </div>
+<p>This tells Docker to start running the container <code>snowgum/astronomy-python</code> and link the current directory to a directory called <code>work</code> inside the container. The output of the command above should show the messages from Jupyter starting. In particular, it should have a few lines such as:</p>
+<div class="highlight"><pre><span></span><code>    To access the notebook, open this file in a browser:
+        file:///home/jovyan/.local/share/jupyter/runtime/nbserver-7-open.html
+    Or copy and paste one of these URLs:
+        http://cdd3b0fdf72f:8888/?token=ffa4fd380e9ece6fa12a63ad73b2a74bd5a2c4cbb01c95df
+     or http://127.0.0.1:8888/?token=ffa4fd380e9ece6fa12a63ad73b2a74bd5a2c4cbb01c95df
+</code></pre></div>
+
+<p>Copy paste the second link (host 127.0.0.1) and open in your web browser. Jupyter lab should start.</p>
 <h3 id="linux-or-macos">Linux or macOS<a class="headerlink" href="#linux-or-macos" title="Permanent link">&para;</a></h3>
 <p>If you have Linux or macOS, the easiest way to get all the software is to use Docker image (see above). But it is also possible to install your python environment using conda, which will take up less space, be a bit faster, and is probably more useful if you want to keep using some of the packages later. </p>
 <p>To install python yourself, we recommend using <a href="https://conda.io/miniconda.html">miniconda</a> or <a href="https://www.anaconda.com/download/">Anaconda</a> Python distributions (<em>python 3.x versions</em>). Miniconda is recommended because it is a smaller download, but Anaconda works just as well if you already have it or are more familiar with it.</p>
@@ -497,7 +544,7 @@ jupyter lab build
 </code></pre></div>
 
 <p>A notebook is a document where you can combine text, images, and source code. If you are unfamiliar with Jupyter, there are <a href="https://jupyter-notebook.readthedocs.io/en/stable/">several</a> <a href="https://www.youtube.com/watch?v=HW29067qVWk">guides</a> and <a href="https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook">tutorials</a>. We recommend you use <a href="https://jupyterlab.readthedocs.io/en/latest/">Jupyterlab</a>, the next-generation version of Jupyter. But you can also use the classical notebook interface.</p>
-<h3 id="testing-installation">Testing installation<a class="headerlink" href="#testing-installation" title="Permanent link">&para;</a></h3>
+<h4 id="testing-installation">Testing installation<a class="headerlink" href="#testing-installation" title="Permanent link">&para;</a></h4>
 <p>To make sure you have all necessary software ready, start Jupyterlab from the terminal (if using conda, activate the  <code>ast4310</code> environment):</p>
 <div class="highlight"><pre><span></span><code>jupyter lab
 </code></pre></div>
@@ -513,7 +560,7 @@ jupyter lab build
 </div>
 <h2 id="installing-the-julia-enviroment">Installing the Julia enviroment<a class="headerlink" href="#installing-the-julia-enviroment" title="Permanent link">&para;</a></h2>
 <p>To do the assignments you will need Julia 1.5.0 or above, plus Jupyter and a few extra packages. Julia itself is stabilising, but its packages are still changing quickly. It is recommended that you do a fresh install of all packages at the start of the semester, to ensure that all will work consistently with the examples.</p>
-<h3 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h3>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you have a laptop with Windows, the recommended way to install all the packages is to use the Docker with an image that we will provide. This is not yet ready, but we are working on it and will update this page soon.</p>
