@@ -18,10 +18,57 @@ To install the programming environment in your laptop, see below.
 
 To do the assignments you will need Python 3.8.x with [Astropy](https://www.astropy.org/), plus Jupyter and many other dependencies of these packages.
 
-### Windows 
+### Windows (using Docker)
 
-!!! warning
-    If you have a laptop with Windows, the recommended way to install all the packages is to use the Docker with an image that we will provide. This is not yet ready, but we are working on it and will update this page soon.
+The recommended way to get all the python packages working in Linux is to use [Docker](https://www.docker.com/). Docker runs a virtual Linux container alongside your operative system, in our case one that already has all the necessary packages installed. 
+
+1. Start by [downloading Docker](https://docs.docker.com/get-docker/)
+2. Install Docker (administrator priviliges are required)
+3. Test your installation by opening a terminal window (Command Prompt or PowerShell) and entering:
+
+```
+> docker --version
+
+Docker version 19.03.1
+```
+
+If you get a similar output to the above (version may vary), you should be good. Now you will need to download the Docker image "snowgum/astronomy-python":
+
+```
+> docker pull snowgum/astronomy-python
+
+Unable to find image 'snowgum/astronomy-python:latest' locally
+latest: Pulling from snowgum/astronomy-python
+692c352adcf2: Pull complete
+97058a342707: Pull complete
+2821b8e766f4: Pull complete
+(...)
+```
+
+This will be several hundreds of MB, so may take a while. You should now have a fully working Linux container with Jupyter lab, and many scientific python packages. You can start it from the terminal. *Be sure to navigate to the directory where you have the AST4310 notebooks*. Then, run:
+
+```
+> docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "%cd%":/home/jovyan/work snowgum/astronomy-python
+
+```
+
+!!! tip
+    If you use `PowerShell` instead of the Command Prompt, you may have to replace the part `%cd%` with `$pwd`. Likewise if you run macOS or Linux, replace with `$PWD`.
+
+
+This tells Docker to start running the container `snowgum/astronomy-python` and link the current directory to a directory called `work` inside the container. The output of the command above should show the messages from Jupyter starting. In particular, it should have a few lines such as:
+
+```
+
+    To access the notebook, open this file in a browser:
+        file:///home/jovyan/.local/share/jupyter/runtime/nbserver-7-open.html
+    Or copy and paste one of these URLs:
+        http://cdd3b0fdf72f:8888/?token=ffa4fd380e9ece6fa12a63ad73b2a74bd5a2c4cbb01c95df
+     or http://127.0.0.1:8888/?token=ffa4fd380e9ece6fa12a63ad73b2a74bd5a2c4cbb01c95df
+```
+
+Copy paste the second link (host 127.0.0.1) and open in your web browser. Jupyter lab should start.
+
 
 ### Linux or macOS
 
@@ -54,7 +101,7 @@ jupyter lab build
 
 A notebook is a document where you can combine text, images, and source code. If you are unfamiliar with Jupyter, there are [several](https://jupyter-notebook.readthedocs.io/en/stable/) [guides](https://www.youtube.com/watch?v=HW29067qVWk) and [tutorials](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook). We recommend you use [Jupyterlab](https://jupyterlab.readthedocs.io/en/latest/), the next-generation version of Jupyter. But you can also use the classical notebook interface.
 
-### Testing installation
+#### Testing installation
 
 To make sure you have all necessary software ready, start Jupyterlab from the terminal (if using conda, activate the  `ast4310` environment):
 
