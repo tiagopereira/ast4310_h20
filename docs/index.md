@@ -10,6 +10,12 @@ These pages contain a description of AST4310 and additional resources. The pages
 - See separate page for [syllabus and literature](literature/)
 - Visualisations and other in-lecture exercises will be shared under [resources](resources/)
 
+
+## Communication
+- We will use channel #AST4310 on [element.io](https://element.io/get-started) for communication. Element is a decentralised, encrypted chat network, that works similar to Mattermost or Slack (minus the surveillance and data harvesting). 
+- If you don't already have an account on Element, please [create a free matrix.org account](https://app.element.io/). To ensure anonymity it is recommended you chose a username that does not reveal your identity.  
+- The #AST4310 channel is invite-only and end-to-end encrypted, so when creating an account make sure you remember the security key - you will need it to join the channel.
+
 ## Assessment
 
 The final grade is determined by an assessment of six projects. Project 1 is compulsory but only pass/fail, so it won't factor in the final grade. The following table lists deadline for handing in each project, how much each project weighs in the final grade, and the topic of each project. More details can be found under [projects](projects/).

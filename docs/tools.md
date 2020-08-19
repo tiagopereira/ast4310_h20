@@ -23,7 +23,7 @@ To do the assignments you will need Python 3.8.x with [Astropy](https://www.astr
 The recommended way to get all the python packages working in Linux is to use [Docker](https://www.docker.com/). Docker runs a virtual Linux container alongside your operative system, in our case one that already has all the necessary packages installed. 
 
 1. Start by [downloading Docker](https://docs.docker.com/get-docker/)
-2. Install Docker (administrator priviliges are required)
+2. Install Docker (administrator priviledges are required)
 3. Test your installation by opening a terminal window (Command Prompt or PowerShell) and entering:
 
 ```
