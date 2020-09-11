@@ -95,7 +95,7 @@ source activate ast4310
 For Jupyterlab, you will also need to install the extensions:
 
 ``` bash
-jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib bqplot
 jupyter lab build
 ```
 
