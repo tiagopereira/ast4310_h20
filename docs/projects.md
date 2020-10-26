@@ -12,8 +12,8 @@ There are a total of six projects, to be handed in at different times and with a
 | [Project 4](https://github.com/tiagopereira/ast4310/tree/master/notebooks/project4)     | 23.10.2020 | 25% | Solar stratification and continua |
 | [Project 5](https://github.com/tiagopereira/ast4310/tree/master/notebooks/project5)     | 13.11.2020 | 25% | LTE line formation |
 | Project 6     | 11.12.2020 | 25% | *Different options:* |
-| <ul><li><a href="https://github.com/tiagopereira/ast4310/tree/master/notebooks/project6a">Project 6a</li></ul>    | | | <ul><li>3D Radiative Transfer</li></ul>|
-| <ul><li>Project 6b</li></ul>   | | | <ul><li>Scattering</li></ul> |
+| <ul><li><a href="https://github.com/tiagopereira/ast4310/tree/master/notebooks/project6a">Project 6a</a></li></ul>    | | | <ul><li>3D Radiative Transfer</li></ul>|
+| <ul><li><a href="https://github.com/tiagopereira/ast4310/tree/master/notebooks/project6b">Project 6b</a></li></ul>   | | | <ul><li>Scattering</li></ul> |
 
 For project 6 there will be a few different options to chose from (each person/group can only select one). Please check this page to see when new options have been added.
 
